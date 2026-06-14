@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>طلب حذف الحساب والبيانات - الظبي | Account & Data Deletion Request - Dhabi</title>
+  <title>طلب حذف الحساب والبيانات - مضبوط | Account & Data Deletion Request - Mazboot</title>
   <!-- Google Fonts: Cairo for Arabic, Inter for English -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -554,8 +554,8 @@
           <path d="M50 30C58 20 65 14 62 10C56 12 52 22 48 28" stroke="#faae18" stroke-width="3" stroke-linecap="round"/>
           <circle cx="48" cy="45" r="3" fill="#117a45"/>
         </svg>
-        <span class="brand-title" lang="ar">الظبي</span>
-        <span class="brand-title" lang="en">Dhabi</span>
+        <span class="brand-title" lang="ar">مضبوط</span>
+        <span class="brand-title" lang="en">Mazboot</span>
       </a>
       
       <button class="lang-toggle-btn" onclick="toggleLanguage()">
@@ -570,8 +570,8 @@
       <h1 lang="ar">طلب حذف الحساب والبيانات</h1>
       <h1 lang="en">Account & Data Deletion Request</h1>
       
-      <p lang="ar">نحن نحترم خصوصيتك. إذا كنت ترغب في حذف حسابك في تطبيق الظبي، يرجى تعبئة النموذج أدناه وسيقوم فريق الدعم لدينا بمعالجة طلبك.</p>
-      <p lang="en">We respect your privacy. If you wish to delete your account in the Dhabi App, please fill out the form below and our support team will process your request.</p>
+      <p lang="ar">نحن نحترم خصوصيتك. إذا كنت ترغب في حذف حسابك في تطبيق مضبوط، يرجى تعبئة النموذج أدناه وسيقوم فريق الدعم لدينا بمعالجة طلبك.</p>
+      <p lang="en">We respect your privacy. If you wish to delete your account in the Mazboot App, please fill out the form below and our support team will process your request.</p>
     </section>
 
     <!-- Data Safety Info Section -->
@@ -592,15 +592,15 @@
           Data That Will Be Deleted
         </h2>
         <ul>
-          <li lang="ar">معلومات الملف الشخصي (الاسم، والبريد الإلكتروني، والصورة الشخصية).</li>
+          <li lang="ar">معلومات الملف الشخصي (الاسم، البريد الإلكتروني، الصورة الشخصية).</li>
           <li lang="ar">بيانات تسجيل الدخول ورمز الجلسة الفعال.</li>
-          <li lang="ar">العناوين المسجلة ومواقع التوصيل المحفوظة.</li>
-          <li lang="ar">سجل عربة التسوق والمفضلة والتقييمات المكتوبة.</li>
+          <li lang="ar">تقارير التفتيش والصور والمستندات المرفوعة.</li>
+          <li lang="ar">بيانات الفروع والمؤسسات المسجلة.</li>
           
           <li lang="en">Profile details (name, email, and profile avatar).</li>
           <li lang="en">Login credentials and active authentication tokens.</li>
-          <li lang="en">Registered delivery addresses and saved coordinates.</li>
-          <li lang="en">Active shopping cart items, favorites list, and reviews.</li>
+          <li lang="en">Inspection reports, photos, and uploaded documents.</li>
+          <li lang="en">Registered branch and organization data.</li>
         </ul>
       </div>
 
@@ -773,10 +773,10 @@
 
   <footer>
     <p>
-      &copy; 2026 <span lang="ar">تطبيق الظبي. جميع الحقوق محفوظة.</span><span lang="en">Dhabi App. All rights reserved.</span>
+      &copy; 2026 <span lang="ar">تطبيق مضبوط. جميع الحقوق محفوظة.</span><span lang="en">Mazboot App. All rights reserved.</span>
       <span class="footer-divider">|</span>
-      <a href="privacy-policy.html" target="_blank" lang="ar">سياسة الخصوصية</a>
-      <a href="privacy-policy.html" target="_blank" lang="en">Privacy Policy</a>
+      <a href="privacy_policy.html" target="_blank" lang="ar">سياسة الخصوصية</a>
+      <a href="privacy_policy.html" target="_blank" lang="en">Privacy Policy</a>
     </p>
   </footer>
 
@@ -882,7 +882,7 @@
       }
 
       // Generate Reference Number
-      const refNumber = 'DHB-' + Math.floor(100000 + Math.random() * 900000);
+      const refNumber = 'MZB-' + Math.floor(100000 + Math.random() * 900000);
 
       requestData = {
         name: nameEl.value.trim(),
@@ -913,7 +913,7 @@
     function getFormattedText() {
       const isAr = document.body.className === 'lang-ar';
       if (isAr) {
-        return `طلب حذف حساب مستخدم - تطبيق الظبي
+        return `طلب حذف حساب مستخدم - تطبيق مضبوط
 -----------------------------------------
 الاسم الكامل: ${requestData.name}
 رقم الهاتف المسجل: ${requestData.phone}
@@ -922,9 +922,9 @@
 رقم المرجع: ${requestData.ref}
 تاريخ الطلب: ${new Date().toLocaleDateString('ar-YE')}
 
-أؤكد رغبتي في حذف حسابي نهائياً وجميع البيانات المرتبطة به من خوادم تطبيق الظبي.`;
+أؤكد رغبتي في حذف حسابي نهائياً وجميع البيانات المرتبطة به من خوادم تطبيق مضبوط.`;
       } else {
-        return `Dhabi User App - Account Deletion Request
+        return `Mazboot App - Account Deletion Request
 -----------------------------------------
 Full Name: ${requestData.name}
 Registered Phone: ${requestData.phone}
@@ -933,7 +933,7 @@ Reason for Deletion: ${requestData.reason}
 Reference ID: ${requestData.ref}
 Date: ${new Date().toLocaleDateString('en-US')}
 
-I confirm that I wish to permanently delete my account and all associated data from Dhabi App servers.`;
+I confirm that I wish to permanently delete my account and all associated data from Mazboot App servers.`;
       }
     }
 
@@ -948,8 +948,8 @@ I confirm that I wish to permanently delete my account and all associated data f
     }
 
     function sendEmailRequest() {
-      const recipient = 'me@osamazayed.com';
-      const subject = encodeURIComponent(`Account Deletion Request [${requestData.ref}] - Dhabi App`);
+      const recipient = 'zaidmhdi33@gmail.com';
+      const subject = encodeURIComponent(`Account Deletion Request [${requestData.ref}] - Mazboot App`);
       const body = encodeURIComponent(getFormattedText());
       window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
     }
